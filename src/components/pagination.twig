@@ -1,0 +1,53 @@
+{% set current = current|default(1) %}
+{% set total = total|default(1) %}
+{% set visible = min(total, 5) %}
+
+<nav class="flex items-center gap-3 lg:gap-5" aria-label="Paginacja">
+	<div class="flex items-center gap-1">
+		<a href="#" class="hidden md:flex items-center p-2.5 rounded-xl border-2 border-[#c7c7c7] bg-white text-gray-3 transition hover:border-gray-3" aria-label="Pierwsza strona">
+			<svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+				<path d="M9.5 15L4.5 10L9.5 5"/>
+				<path d="M15.5 15L10.5 10L15.5 5"/>
+			</svg>
+		</a>
+		<a href="#" class="flex items-center p-2.5 rounded-xl border-2 border-[#c7c7c7] bg-white text-gray-3 transition hover:border-gray-3" aria-label="Poprzednia strona">
+			<svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+				<path d="M12.5 15L7.5 10L12.5 5"/>
+			</svg>
+		</a>
+	</div>
+
+	<div class="flex items-center gap-1 text-base leading-6 font-semibold">
+		{% for i in 1..visible %}
+			<a href="#" class="{{ html_classes('w-10 items-center justify-center rounded-xl p-2 transition', {
+				'flex bg-purple text-white': i == current,
+				'text-purple-easy hover:bg-white': i != current,
+				'flex': i <= 3 and i != current,
+				'hidden sm:flex': i > 3 and i != current
+			}) }}" {% if i == current %}aria-current="page"{% endif %}>{{ i }}</a>
+		{% endfor %}
+
+		{% if total > visible %}
+			<span class="flex gap-0.5 px-1 pt-3" aria-hidden="true">
+				<span class="size-0.5 rounded-full bg-[#a1a9b3]"></span>
+				<span class="size-0.5 rounded-full bg-[#a1a9b3]"></span>
+				<span class="size-0.5 rounded-full bg-[#a1a9b3]"></span>
+			</span>
+			<a href="#" class="flex w-10 items-center justify-center rounded-xl p-2 text-purple-easy transition hover:bg-white">{{ total }}</a>
+		{% endif %}
+	</div>
+
+	<div class="flex items-center gap-1">
+		<a href="#" class="flex items-center p-2.5 rounded-xl border-2 border-[#c7c7c7] bg-white text-gray-3 transition hover:border-gray-3" aria-label="Następna strona">
+			<svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+				<path d="M7.5 15L12.5 10L7.5 5"/>
+			</svg>
+		</a>
+		<a href="#" class="hidden md:flex items-center p-2.5 rounded-xl border-2 border-[#c7c7c7] bg-white text-gray-3 transition hover:border-gray-3" aria-label="Ostatnia strona">
+			<svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+				<path d="M4.5 15L9.5 10L4.5 5"/>
+				<path d="M10.5 15L15.5 10L10.5 5"/>
+			</svg>
+		</a>
+	</div>
+</nav>

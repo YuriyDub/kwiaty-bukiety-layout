@@ -1,0 +1,89 @@
+{
+    "title": "Blog — Kwiaty Bukiety",
+    "blog": {
+        "title": "Blog",
+        "subtitle": "Porady, inspiracje i pomysły, które pomogą wybrać idealny bukiet na każdą okazję",
+        "posts": [
+            {
+                "title": "Kwiatowy savoir-vivre: Jak podarować bukiet z klasą?",
+                "excerpt": "Wybór odpowiednich kwiatów to dopiero połowa sukcesu. Prawdziwa sztuka tkwi w umiejętności ich wręczenia tak, aby obdarowana osoba poczuła się naprawdę wyjątkowo. W dzisiejszym zabieganym świecie, szczególnie w tak dynamicznym mieście jak Warszawa, coraz częściej korzystamy z nowoczesnych rozwiązań. Nasza Poczta z dostawą kwiatową to idealny sposób, by dbać o relacje i pielęgnować piękne tradycje, nawet gdy grafik pęka w szwach lub dzielą nas kilometry.",
+                "date": "12.04.2027",
+                "link": "/blog/kwiaty-savoir-vivre",
+                "img": { "src": "/images/flowers/person-cutting-up-flowers.png", "alt": "Florystka podająca bukiet" }
+            },
+            {
+                "title": "Czerwone kwiaty w wieńcach pogrzebowych: Symbolika i tradycje",
+                "excerpt": "Wybór kwiatów na pogrzeb bliskiej osoby to trudne zadanie. Florystyka żałobna zawsze opiera się na głębokiej symbolice.",
+                "date": "01.04.2027",
+                "link": "/blog/czerwone-kwiaty-w-wiencach",
+                "img": { "src": "/images/flowers/red-aksamit.png", "alt": "Czerwony wieniec pogrzebowy" }
+            },
+            {
+                "title": "Sklepy internetowe a róże: Jak wybrać zaufanego sprzedawcę i zamówić kwiaty online",
+                "excerpt": "Zakupy online stały się codziennością, a kwiaty to jeden z najczęściej zamawianych produktów przez internet. Dost.",
+                "date": "01.04.2027",
+                "link": "/blog/sklepy-internetowe-a-roze",
+                "img": { "src": "/images/flowers/white-winter-roses.png", "alt": "Białe róże" }
+            },
+            {
+                "title": "Kwiaty savoir-vivre: jak podarować bukiet z klasą?",
+                "excerpt": "Zakupy online stały się codziennością, a kwiaty to jeden z najczęściej zamawianych produktów przez internet.",
+                "date": "01.04.2027",
+                "link": "/blog/kwiaty-savoir-vivre-2",
+                "img": { "src": "/images/flowers/person-cutting-up-flowers.png", "alt": "Florystka podająca bukiet" }
+            },
+            {
+                "title": "Czerwone kwiaty w wieńcach pogrzebowych: Symbolika i tradycje",
+                "excerpt": "Wybór kwiatów na pogrzeb bliskiej osoby to trudne zadanie. Florystyka żałobna zawsze opiera się na głębokiej symbolice.",
+                "date": "01.04.2027",
+                "link": "/blog/czerwone-kwiaty-w-wiencach-2",
+                "img": { "src": "/images/flowers/red-aksamit.png", "alt": "Czerwony wieniec pogrzebowy" }
+            },
+            {
+                "title": "Sklepy internetowe a róże: Jak wybrać zaufanego sprzedawcę i zamówić kwiaty online",
+                "excerpt": "Zakupy online stały się codziennością, a kwiaty to jeden z najczęściej zamawianych produktów przez internet. Dost.",
+                "date": "01.04.2027",
+                "link": "/blog/sklepy-internetowe-a-roze-2",
+                "img": { "src": "/images/flowers/white-winter-roses.png", "alt": "Białe róże" }
+            },
+            {
+                "title": "Kwiaty savoir-vivre: jak podarować bukiet z klasą?",
+                "excerpt": "Zakupy online stały się codziennością, a kwiaty to jeden z najczęściej zamawianych produktów przez internet.",
+                "date": "01.04.2027",
+                "link": "/blog/kwiaty-savoir-vivre-3",
+                "img": { "src": "/images/flowers/person-cutting-up-flowers.png", "alt": "Florystka podająca bukiet" }
+            },
+            {
+                "title": "Czerwone kwiaty w wieńcach pogrzebowych: Symbolika i tradycje",
+                "excerpt": "Wybór kwiatów na pogrzeb bliskiej osoby to trudne zadanie. Florystyka żałobna zawsze opiera się na głębokiej symbolice.",
+                "date": "01.04.2027",
+                "link": "/blog/czerwone-kwiaty-w-wiencach-3",
+                "img": { "src": "/images/flowers/red-aksamit.png", "alt": "Czerwony wieniec pogrzebowy" }
+            },
+            {
+                "title": "Sklepy internetowe a róże: Jak wybrać zaufanego sprzedawcę i zamówić kwiaty online",
+                "excerpt": "Zakupy online stały się codziennością, a kwiaty to jeden z najczęściej zamawianych produktów przez internet. Dost.",
+                "date": "01.04.2027",
+                "link": "/blog/sklepy-internetowe-a-roze-3",
+                "img": { "src": "/images/flowers/white-winter-roses.png", "alt": "Białe róże" }
+            },
+            {
+                "title": "Kwiaty savoir-vivre: jak podarować bukiet z klasą?",
+                "excerpt": "Zakupy online stały się codziennością, a kwiaty to jeden z najczęściej zamawianych produktów przez internet.",
+                "date": "01.04.2027",
+                "link": "/blog/kwiaty-savoir-vivre-4",
+                "img": { "src": "/images/flowers/person-cutting-up-flowers.png", "alt": "Florystka podająca bukiet" }
+            }
+        ],
+        "button": {
+            "text": "Więcej artykułów",
+            "link": "#",
+            "variant": "purple",
+            "size": "lg"
+        },
+        "pagination": {
+            "current": 1,
+            "total": 19
+        }
+    }
+}
